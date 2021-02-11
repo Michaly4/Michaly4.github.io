@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Core7-2</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			/* padding: 40px 0 0; */
+			background-color: lightgrey;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		textarea {
+			border-radius: 10px;
+			margin-bottom: 10px;
+			outline: none;
+			padding: 10px;
+		}
+
+		#key{
+			display: flex;
+		}
+
+		.div {
+			display: inline-flex;
+			margin-bottom: 7px;
+		}
+
+		.top {
+			display: flex;
+			gap: 5px;
+
+		}
+
+		/* #key__bottom {
+			background-color: #fff;
+			border-radius: 5px;
+			height: 50px;
+		} */
+
+		p {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.active{
+			background:rgba(0, 0,0, 0.2);
+		}
+
+		.shift {
+			width: 125px;
+			text-align: center;
+		}
+		.two{
+			width: 110px;
+		}
+		.capslock{
+			position: relative;
+		}
+		.capslock::after{
+		content: '';
+		position: absolute;
+		top: 10px;
+		right: 8px;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: rgba(0, 0,0, 0.4);
+		}
+		.capslock:hover::after{
+			background: #08ff00;
+		}
+
+		.center,
+		.top,
+		.caps,
+		.bottom {
+			display: flex;
+			justify-content: space-between;
+		}
+	</style>
+	<script src="app.js" defer></script>
+</head>
+
+<body>
+	<textarea name="" id="textarea" cols="96" rows="10" disabled style="background-color: white;" ></textarea>
+	<div id="key">
+		<div id="key__center">
+			<div class="div top">
+				<p>§</p>
+				<p>1</p>
+				<p>2</p>
+				<p>3</p>
+				<p>4</p>
+				<p>5</p>
+				<p>6</p>
+				<p>7</p>
+				<p>8</p>
+				<p>9</p>
+				<p>0</p>
+				<p>-</p>
+				<p>=</p>
+				<p>Backspace</p>
+			</div>
+			<div class="div center">
+				<p>Tab</p>
+				<p>q</p>
+				<p>w</p>
+				<p>e</p>
+				<p>r</p>
+				<p>t</p>
+				<p>y</p>
+				<p>u</p>
+				<p>i</p>
+				<p>o</p>
+				<p>p</p>
+				<p>[</p>
+				<p>]</p>
+				<p class="w">
+/
+				</p>
+			</div>
+			<div class="div caps">
+				<p class="capslock">CapsLock</p>
+				<p>a</p>
+				<p>s</p>
+				<p>d</p>
+				<p>f</p>
+				<p>g</p>
+				<p>h</p>
+				<p>j</p>
+				<p>k</p>
+				<p>l</p>
+				<p>;</p>
+				<p>'</p>
+				<p>Enter</p>
+			</div>
+			<div class="div bottom">
+				<p class="shift">shift</p>
+				<p>z</p>
+				<p>x</p>
+				<p>c</p>
+				<p>v</p>
+				<p>b</p>
+				<p>n</p>
+				<p>m</p>
+				<p>,</p>
+				<p>.</p>
+				<p>/</p>
+				<p class="shift two">shift</p>
+			</div>
+			<p class="key__bottom"> </p>
+		</div>
+
+	</div>
+
+
+
+
+
+
+</body>
+
+</html>
