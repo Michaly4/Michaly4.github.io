@@ -1,0 +1,754 @@
+@import '../base/reset';
+@import '../base/variables';
+@import '../base/mixins';
+
+%df {
+   display: flex;
+}
+
+%tc {
+   text-align: center;
+}
+
+%jusalcen {
+   justify-content: center;
+   align-items: center;
+}
+
+%wh {
+   width: 60px;
+   height: 60px;
+}
+
+%brandWH {
+   width: 140px;
+   height: 80px;
+}
+
+%bgi {
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+body {
+   color: $color_1;
+}
+
+.container {
+   max-width: 1260px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.header {
+   background: {
+      image: url(../image/BG.jpg);
+      repeat: no-repeat;
+      size: cover;
+      position: center;
+   }
+
+   &__top {
+      @extend %df;
+      padding-top: 10px;
+      padding-bottom: 50px;
+      margin-bottom: 110px;
+
+   }
+
+   &__contact {
+      margin-left: auto;
+      text-align: center;
+   }
+
+   &__phone {
+      color: $color_1;
+      @include fonts('Lato', 28px, 700);
+      margin-bottom: 5px;
+   }
+
+   &__logo {
+      @include fonts('Lato', 30px, 400);
+      color: #5a5a5a;
+      padding-top: 10px;
+   }
+
+   &__link {
+      color: $color_3;
+      text-decoration: underline;
+      cursor: pointer;
+      @include fonts('Lato', 16px, 400);
+   }
+
+   &__bottom {
+      @extend %df;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 90px;
+   }
+
+   &__title {
+      margin-bottom: 100px;
+   }
+
+   &__suptitle {
+      @include fonts('Lato', 48px, 600);
+      text-transform: uppercase;
+      @extend %tc;
+   }
+
+   &__subtitle {
+      @extend %tc;
+      @include fonts('Lato', 30px, 400);
+   }
+
+   &__icons {
+      @extend %df;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 100px;
+      flex-wrap: wrap;
+     
+   }
+
+   &__icon-left,
+   &__icon-center,
+   &__icon-right {
+      width: 30%;
+      @extend %df;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      @media screen and (max-width:500px) {
+         width: 100%;
+         margin-bottom: 40px;
+      }
+
+   }
+
+   &__img {
+      @extend %wh;
+      margin-bottom: 35px;
+   }
+
+   &__img--left {
+      background-image: url(../image/header-auto.png);
+      @extend %bgi;
+   }
+
+   &__img--center {
+      background-image: url(../image/header-icons2.png);
+      @extend %bgi;
+   }
+
+   &__img--right {
+      background-image: url(../image/hd-icons3.png);
+      @extend %bgi;
+   }
+
+   &__icon-text {
+      @include fonts('Lato', 18px, 400);
+      width: 147px;
+      @extend %tc;
+   }
+
+   &__btn {
+      width: 100%;
+      @extend %df;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+   }
+
+   &__btn-left,
+   &__btn-right {
+      width: 50%;
+      @extend %tc;
+      @media screen and (max-width:500px) {
+         width: 100%;
+         margin-bottom: 50px;
+         
+      }
+      
+   }
+
+   &__btn-text {
+      @include fonts('Lato', 14px, 400);
+      width: 140px;
+      margin: 0 auto;
+   }
+
+   .btn {
+      display: inline-block;
+      @include fonts('Lato', 18px, 700);
+      width: 230px;
+      padding: 20px;
+      background-color: $color_3;
+      border-radius: 40px;
+      -webkit-border-radius: 40px;
+      -moz-border-radius: 40px;
+      -ms-border-radius: 40px;
+      -o-border-radius: 40px;
+      margin-bottom: 20px;
+      cursor: pointer;
+
+      &-right {
+         background-color: transparent;
+         border: 1px solid $color_3;
+      }
+   }
+}
+
+.info {
+
+   &__inner {
+      @extend %df;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+
+   &__body {
+      padding: 80px 0;
+   }
+
+   &__img {
+      margin-bottom: 35px;
+   }
+
+   &__icon {
+      width: 33.33333%;
+      @extend %tc;
+      color: $color_2;
+      padding: 2% 7%;
+      @media screen and (max-width:768px) {
+         width: 100%;
+         margin-bottom: 30px;
+      }
+   }
+
+   &__title {
+      @include fonts('Lato', 16px, 700);
+      margin-bottom: 22px;
+   }
+
+   &__subtitle {
+      @include fonts('Lato', 14px, 400);
+
+   }
+
+   &__icon--top {
+      margin-bottom: 80px;
+      @media screen and (max-width:768px) {
+        margin-bottom: 30px;
+      }
+   }
+
+   &__inner-bottom {
+      justify-content: center;
+   }
+}
+
+.text {
+   color: $color_2;
+   @extend %tc;
+   margin-bottom: 30px;
+   @include fonts('Lato', 30px, 700);
+}
+
+.form {
+   background-color: #efefef;
+   padding: 80px 0;
+
+
+
+   &__subtitle {
+      @include fonts('Lato', 16px, 400);
+      color: $color_2;
+      @extend %tc;
+      margin-bottom: 60px;
+   }
+
+   &__info {
+      @extend %df;
+      flex-wrap: wrap;
+      width: 940px/1260px * 100%;
+      margin: 0 auto;
+      outline: 3px solid $color_1;
+      padding: 50px 20px;
+      justify-content: space-between;
+
+   }
+
+   &__left {
+      width: 33.33333%;
+      @media screen and (max-width:768px) {
+         width: 100%;
+      }
+   }
+
+   &__center {
+      width: 33.33333%;
+      @media screen and (max-width:768px) {
+         width: 100%;
+      }
+   }
+
+   &__text {
+      @include fonts('Lato', 13px, 400);
+      color: $color_2;
+      margin: 25px 5px 10px;
+   }
+
+   &__right {
+      width: 33.33333%;
+      @media screen and (max-width:768px) {
+         width: 100%;
+      }
+   }
+
+   &__center {
+      padding: 0 20px;
+   }
+
+   &__input {
+      width: 100%;
+      height: 40px;
+      padding-left: 5%;
+      @media screen and (max-width:768px) {
+         margin-bottom: 50px;
+      }
+     
+   }
+
+   &__area {
+      width: 100%;
+      padding: 15px;
+      height: 47%;
+      outline: none;
+      border: none;
+   }
+
+   &__btn {
+      width: 80%;
+      background-color: $color_3;
+      color: $color_1;
+      margin-top: 30px;
+      margin-left: 10%;
+      padding: 15px;
+      @extend%tc;
+      @include fonts('Lato', 18px, 700);
+      border-radius: 40px;
+      -webkit-border-radius: 40px;
+      -moz-border-radius: 40px;
+      -ms-border-radius: 40px;
+      -o-border-radius: 40px;
+   }
+}
+
+.brand {
+
+   &__body {
+      @extend %df;
+      flex-direction: column;
+      padding: 80px 0;
+
+   }
+
+   &__title {
+      margin-bottom: 60px;
+   }
+
+   &__top,
+   &__center,
+   &__bottom {
+      @extend %df;
+      justify-content: center;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+   }
+
+   &__icon1 {
+      background-image: url(../image/audi.png);
+      @extend %brandWH;
+
+      &:hover {
+         background-image: url(../image/audi-hover.png);
+      }
+   }
+
+   &__icon2 {
+      background-image: url(../image/Mercedes.png);
+      @extend %brandWH;
+
+      &:hover {
+         background-image: url(../image/Mercedes-hover.png);
+      }
+   }
+
+   &__icon3 {
+      background-image: url(../image/bmw.png);
+      @extend %brandWH;
+
+      &:hover {
+         background-image: url(../image/bmw-hover.png);
+      }
+   }
+
+   &__icon4 {
+      background-image: url(../image/Volkswagen.png);
+      @extend %brandWH;
+
+      &:hover {
+         background-image: url(../image/Volkswagen-hover.png);
+      }
+   }
+
+   &__icon5 {
+      background-image: url(../image/jaguar.png);
+      @extend %brandWH;
+
+      &:hover {
+         background-image: url(../image/jaguar-hover.png);
+      }
+   }
+
+   &__icon6 {
+      background-image: url(../image/Volvo.png);
+      @extend %brandWH;
+
+      &:hover {
+         background-image: url(../image/Volvo_hover.png);
+      }
+   }
+
+   &__icon7 {
+      background-image: url(../image/mini_logo.png);
+      @extend %brandWH;
+
+      &:hover {
+         background-image: url(../image/mini_hover.png);
+      }
+
+   }
+
+   &__icon8 {
+      background-image: url(../image/land-rover.png);
+      @extend %brandWH;
+
+      &:hover {
+         background-image: url(../image/landrover-hover.png);
+      }
+
+   }
+
+   &__icon9 {
+      background-image: url(../image/honda.png);
+      @extend %brandWH;
+
+      &:hover {
+         background-image: url(../image/honda-hover.png);
+      }
+
+   }
+
+   &__icon10 {
+      background-image: url(../image/jeep.png);
+      @extend %brandWH;
+
+      &:hover {
+         background-image: url(../image/jeephover.png);
+      }
+   }
+
+   &__icon11 {
+      background-image: url(../image/bentley.png);
+      @extend %brandWH;
+
+      &:hover {
+         background-image: url(../image/bentley-hover.png);
+      }
+
+   }
+
+   &__icon12 {
+      background-image: url(../image/Porsche_logo.png);
+      @extend %brandWH;
+
+      &:hover {
+         background-image: url(../image/Porsche_hover.png);
+      }
+
+   }
+
+   &__icon13 {
+      background-image: url(../image/Mazda_Logo.png);
+      @extend %brandWH;
+
+      &:hover {
+         background-image: url(../image/Mazda_hover.png);
+      }
+
+   }
+}
+
+.video {
+   padding-bottom: 80px;
+
+   &__body {
+      @extend %df;
+      justify-content: center;
+   }
+
+   &__box {
+      border: 4px solid #f2f2f2;
+      padding: 15px;
+   }
+
+   &__title {
+      margin-bottom: 60px;
+   }
+   @media screen and (max-width:768px){
+      iframe{
+         width: 500px;
+      }
+   }
+   @media screen and (max-width:520px){
+      iframe{
+         width: 320px;
+      }
+   }
+
+}
+
+.about {
+   background-color: #efefef;
+   
+
+   &__title {
+      margin-left: -40px;
+      padding-top: 80px;
+      margin-bottom: 50px;
+   }
+
+   &__body {
+      @extend %df;
+      flex-wrap: wrap;
+      padding: 0 0 70px 50px;
+      width: 100%;
+      margin: 0 auto;
+
+   }
+
+   &__info {
+      width: 50%;
+   }
+
+
+&__text {
+
+   padding-left: 90px;
+   position: relative;
+   margin-bottom: 30px;
+
+   ::before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 15px;
+      background-image: url(../image/about-img.png);
+      width: 90px;
+      height: 90px;
+
+   }
+}
+
+&__name {
+   color: #757575;
+   @include fonts('Lato', 12px, 700);
+   margin-bottom: 15px;
+}
+
+&__suptitle {
+   color: #d91233;
+   @include fonts('Lato', 16px, 700);
+   margin-bottom: 20px;
+}
+
+&__subtitle {
+   color: #2b2b2b;
+   @include fonts('Lato', 13px, 700);
+   width: 75%;
+}
+@media screen and (max-width:768px) {
+   &__info{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+   }
+   &__text{
+      padding-left: 130px;
+   }
+   &__text ::before{
+      left: 15px;
+   }
+   
+}
+
+}
+
+.contact {
+   background-color: #dbdbdb;
+
+   &__text {
+      padding-top: 70px;
+      padding-bottom: 25px;
+   }
+
+   &__inner {
+      padding: 60px 0;
+   }
+
+   &__body {
+      width: 865px/1260px * 100%;
+      outline: 3px solid $color_1;
+      margin: 0 auto;
+      padding: 30px 0 15px;
+   }
+
+   &__top {
+      padding: 30px;
+      width: 100%;
+      @extend %df;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      color: $color_2;
+
+   }
+
+   &__name {
+      margin-bottom: 5px;
+      margin-top: 15px;
+   }
+
+   input {
+
+      &#inp,
+      &#inp2 {
+         width: 260px;
+         height: 50px;
+      }
+   }
+
+   &__bottom {
+      padding: 20px 0 40px;
+      @extend %df;
+      @extend %jusalcen;
+
+   }
+
+   &__btn {
+      padding: 20px;
+      background-color: $color_3;
+      color: $color_1;
+      width: 299px;
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      @include fonts ('Lato', 18px, 700);
+   }
+
+
+}
+
+.karte {
+
+   &__div {
+      width: 100%;
+      position: relative;
+
+   }
+
+   &__iframe {
+      width: 100%;
+      height: 650px;
+
+
+   }
+
+   .box {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%);
+      width: 480px;
+      height: 290px;
+      background-color: $color_3;
+      -webkit-transform: translate(-50%);
+      -moz-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+      -o-transform: translate(-50%);
+      padding: 60px 90px 50px;
+
+      &__title,
+      &__subtitle,
+      &__phone,
+      &__mail {
+         @extend %tc;
+      }
+
+      &__title {
+         margin-bottom: 30px;
+      }
+
+      &__subtitle {
+         margin-bottom: 20px;
+      }
+
+      &__phone,
+      &__mail {
+         margin-bottom: 30px;
+         color: $color_1;
+         cursor: pointer;
+      }
+
+      &__mail {
+         text-decoration: underline;
+      }
+      @media screen and (max-width:500px) {
+         width: 320px;
+      }
+   }
+}
+
+.footer {
+   &__top {
+      padding: 30px 0;
+      @extend %df;
+   }
+
+   &__contact {
+      margin-left: auto;
+      text-align: center;
+   }
+
+   &__phone {
+      color: $color_2;
+      @include fonts('Lato', 28px, 700);
+      margin-bottom: 5px;
+   }
+   &__link{
+      color: $color_3;
+      text-decoration: underline;
+      cursor: pointer;
+      @include fonts('Lato', 16px, 400);
+   }
+   &__logo {
+      @include fonts('Lato', 30px, 400);
+      color: #5a5a5a;
+      padding-top: 10px;
+   }
+}
