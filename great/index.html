@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Core8-1</title>
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      input,
+      select,
+      h2,
+      p {
+         margin: 0 0 5px 20px;
+         padding: 6px;
+      }
+      .card-title,.caption{
+         font-size: 1.5em;
+         margin-left: 5px;
+         font-weight: bold;
+      }
+
+      .m {
+         padding: 5px;
+      }
+
+      #man {
+         position: relative;
+         top: -15%;
+         border: 10px solid white;
+         border-radius: 50%;
+      }
+      #mail{
+         margin-bottom: 15px;
+      }
+
+      .labcheck {
+         padding: 10px;
+         display: block;
+      }
+
+      .uil {
+         font-size: 30px;
+         color: white;
+         padding: 2px;
+      }
+
+      .card-footer {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .card-title,.card-mail,.card-prof{
+         margin: 0 0 5px 0;
+      }
+      .sign {
+         width: 30%;
+         height: 40px;
+         margin: 0 auto;
+         background-color: #fff;
+         outline: none;
+         color: #4fb072;
+         border: 1px solid #4fb072;
+         margin-bottom: 30px;
+         border-radius:5px;
+      }
+      .sign:hover{
+         background-color: #4fb072;
+         color: #fff;
+      }
+      #card{
+         box-shadow: 0 5px 15px rgba(0, 0,0,.5);
+      }
+   </style>
+</head>
+
+<body>
+   <form name="f1" class="top">
+      <input name="left" type="text">
+      <input type="button" name="btn" value="move"></input>
+      <input name="right" type="text">
+   </form>
+   <form name="f2">
+      <input name="place" type="text" placeholder="bb">
+   </form>
+   <br>
+   <br>
+   <form name="f3">
+      <h2>Creat your account </h2>
+      <p>First Name</p>
+      <input type="text" name="name" id="" placeholder="type here..">
+      <p>Second Name</p>
+      <input type="text" name="second" id="" placeholder="type here..">
+      <p>First Name</p>
+      <input type="email" name="mail" required placeholder="enter email" id="mail">
+      <div class="rd">
+         <label for="lb"> <input type="radio" name="man" id="lb" checked>
+            <span class="m">man</span>
+         </label>
+         <label for="lbw"> <input type="radio" name="man" id="lbw"><span class="m">woman</span></label>
+      </div>
+      <p>Position</p>
+      <select name="position" id="pruf">
+         <option value="Choose" selected>Choose</option>
+         <option value="Frontend">Frontend</option>
+         <option value="Backend">Backend</option>
+         <option value="QC/QA">QC/QA</option>
+      </select>
+      <label class="labcheck" for="checkID"><input type="checkbox" name="check" id="checkID"><span class="m">I agree all
+            statements in Terms of service</span></label>
+      <input name="btn" type="button" value="Sign Up">
+   </form>
+   <div id="card">
+      <div class="card-header">
+       
+      </div>
+      <img id="man" src="./image/women.png" style="width: 140px;" alt="">
+      <div class="card-body">
+         <span class="card-title"></span><span class="caption">Ivan</span>
+         <p class="card-mail">alina@gmail.com</p>
+         <p class="card-prof"></p>
+      </div>
+      <button class="sign" type="button" value="Sign out">Sign out</button>
+      <div class="card-footer">
+         <i class="uil uil-facebook-f"></i>
+         <i class="uil uil-github-alt"></i>
+         <i class="uil uil-linkedin-alt"></i>
+      </div>
+   </div>
+
+
+
+
+
+   <script src="app.js"></script>
+</body>
+
+</html>
