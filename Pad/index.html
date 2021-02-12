@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Core9-2</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      body {
+         background: rgb(255, 255, 255);
+         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+         background-size: cover;
+         background-repeat: no-repeat;
+         width: 100%;
+
+      }
+      .check{
+         cursor: pointer;
+      }
+
+      .list {
+         width: 100%;
+         height: 100vh;
+         margin: 0 auto;
+         position: relative;
+      }
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+
+      .left {
+         position: absolute;
+         top: 15%;
+         left: 32%;
+         transform: translate(-40%, -50%);
+         color: #ee5c67;
+      }
+
+      .right {
+
+         color: #ee5c67;
+      }
+
+      .html {
+         margin-left: 5px;
+         text-transform: uppercase;
+      }
+
+      #btn {
+         padding: 8px 15px;
+         background-color: #000;
+         color: white;
+         outline: none;
+         border: none;
+         border-radius: 5px;
+         width: 60%;
+         cursor: pointer;
+      }
+
+      #text {
+         width: 100%;
+         outline: none;
+         border: none;
+         width: 200px;
+         border-bottom: 2px solid black;
+      }
+
+      .form__box {
+         width: 300px;
+         position: absolute;
+         top: 19%;
+         left: 24%;
+         height: 200px;
+         padding: 10px;
+      }
+
+      .none,
+      .none2 {
+         display: none;
+      }
+
+      .yes {
+         display: block;
+         opacity: 1;
+      }
+
+      .denger {
+         position: absolute;
+         top: 32%;
+         left: 23%;
+         background-color: #f6d7da;
+         width: 740px;
+         height: 100px;
+         padding: 20px;
+         border-radius: 4px;
+         color: #74353f;
+      }
+
+      .subtitle {
+         padding: 5px;
+         letter-spacing: 1px;
+         font-size: 18px;
+      }
+
+      .x {
+         position: relative;
+         left: 93%;
+         bottom: 110%;
+         font-size: 22px;
+         cursor: pointer;
+      }
+
+      .form__item {
+         padding-bottom: 5px;
+      }
+
+      .form__box--right {
+         display: flex;
+         position: relative;
+         justify-content: space-evenly;
+         align-items: center;
+         flex-direction: column;
+         left: 57%;
+         bottom: 93%;
+         width: 300px;
+         height: 145px;
+      }
+   </style>
+</head>
+
+<body>
+   <form id="form" name="form">
+      <div class="list">
+         <img src="./image/ipad2.jpg" alt="">
+         <h3 class="left" id="">Список завдань</h3>
+         <div class="form__box">
+            <div class="form__item">
+               <input type="checkbox" class="check" name="check" id=""><span class="html">HTML5</span>
+            </div>
+            <div class="form__item">
+               <input type="checkbox" class="check" name="check" id=""><span class="html">CSS3</span>
+            </div>
+            <div class="form__item">
+               <input type="checkbox" class="check" name="check" id=""><span class="html">Sass/scss</span>
+            </div>
+            <div class="form__item">
+               <input type="checkbox" class="check" name="check" id=""><span class="html">Bootstrap</span>
+            </div>
+         </div>
+         <div class="form__box--right">
+            <h3 class="right" id="">Додати нове завдання</h3>
+            <label> <input type="text" name="text" id="text"></label>
+            <button id="btn" name="btn" type="button">Додати</button>
+         </div>
+      </div>
+      <div class="denger none">
+         <h2 class="title">Попередження!</h2>
+         <p class="subtitle"></p>
+         <span class="x">X</span>
+      </div>
+   </form>
+   <script src="app.js"></script>
+</body>
+
+</html>
+
+
+<!-- <label for="check"><input class="check" type="checkbox" name="check" ><span class="html">HTML
+                  </span></label> -->
