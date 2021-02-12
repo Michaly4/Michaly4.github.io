@@ -91,8 +91,8 @@ h6 {
 /*--------------------*/
 body {
    background-image: url(./imageProjects/bg.jpg);
-   /* background-position: center;
-   background-size: cover; */
+   /* background-position: center; */
+   background-size: cover; 
    background-repeat: no-repeat;
    height: 100%;
    min-height: 100vh;
@@ -109,17 +109,20 @@ body {
 }
 
 .container {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
+   margin: 0 auto;
+   max-width: 1100px;
+   height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .block {
-   padding: 0 100px 100px;
+   /* padding: 0 100px 100px; */
    width: 70%;
    background: rgba(211, 211, 211, .5);
    box-shadow: 0 0 15px rgb(255, 255, 255);
+   margin: 0 auto;
+   /* height: 100vh; */
 }
 
 .links {
@@ -127,6 +130,7 @@ body {
    justify-content: space-around;
    flex-wrap: wrap;
    gap: 20px;
+   padding: 0 0 50px;
 }
 
 .link {
@@ -153,6 +157,7 @@ body {
    top: 0;
    outline: none;
    text-transform: uppercase;
+   word-wrap: break-word;
 }
 
 .yellow {
@@ -247,4 +252,22 @@ span {
 .link:active {
    top: 3px;
    box-shadow: 0 1px 0;
+}
+
+@media screen and (max-width:768px) {
+   body{
+      background-size: auto;
+   }
+   .block {
+      padding: 20px;
+      height: 100%;
+   }
+}
+@media screen and (max-width:425px){
+   body{
+      background-repeat: repeat;
+   }
+   .container{
+      height: auto;
+   }
 }
