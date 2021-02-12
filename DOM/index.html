@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DZ10-Core</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="container">
+      <div class="wrapper">
+         <div id="top" class="box top " style="font-size: 18px; color: rgb(255, 255, 255); text-align: center;">
+            <p class="top__text">Lorem ipsum dolor sit amet</p>
+            <p class="top__text">Lorem ipsum dolor sit amet</p>
+            <p class="top__text">Lorem ipsum dolor sit amet</p>
+            <p class="top__text">Lorem ipsum dolor sit amet</p>
+            <p class="top__text">Lorem ipsum dolor sit amet</p>
+         </div>
+         <div class="center">
+            <input class="center__edit" type="button" value="edit">
+            <input class="center__style" type="button" value="style">
+         </div>
+         <div class="box bottom">
+            <div class="bottom__edit ">
+               <textarea class="bottom__area "></textarea>
+               <input type="button" value="add" class="bottom__add">
+               <input type="button" value="save" class="bottom__save">
+            </div>
+            <div class="bottom__wrapper hide">
+               <form name="bottom" class="bottom__style">
+                  <div class="bottom__size">
+                     <h4 class="bottom__text">Font Size</h4>
+                     <input class="fontSize" onclick="fontSize()" type="radio" name="radio"
+                        value="12px"><span>12px</span>
+                     <input class="fontSize" onclick="fontSize()" type="radio" name="radio" checked
+                        value="14px"><span>14px</span>
+                     <input class="fontSize" onclick="fontSize()" type="radio" name="radio"
+                        value="16px"><span>16px</span>
+                     <input class="fontSize" onclick="fontSize()" type="radio" name="radio"
+                        value="18px"><span>18px</span>
+                     <input class="fontSize" onclick="fontSize()" type="radio" name="radio"
+                        value="20px"><span>20px</span>
+                  </div>
+                  <div class="bottom__family">
+                     <h4 class="bottom__text">Font Family</h4>
+                     <select id="fontFamily">
+                        <option value="">Choose option</option>
+                        <option value="cursive">cursive</option>
+                        <option value="fantasy">fantasy</option>
+                        <option value="monospace">monospace</option>
+                        <option value="sans-serif">sans-serif</option>
+                     </select>
+                  </div>
+                  <div class="bottom__colors">
+                     <h4 class="bottom__text">Colors</h4>
+                     <input name="colorText" type="button" value="Color of text" class="bottom__btn bottom__btn--color">
+                     <input name="coolorBg" type="button" value="Background color" class="bottom__btn bottom__btn--bg">
+                  </div>
+                  <div class="bottom__cursive">
+                     <h4 class="bottom__text">Font Style</h4>
+                     <input onclick="fontStyle()" class="check" type="checkbox" name="check"><span
+                        style="margin-right: 12px;">Oblique text</span>
+                     <input onclick="fontWeight()" class="check" type="checkbox" name="check"><span>Bold text</span>
+                  </div>
+               </form>
+               <div class="bottom__right">
+                  <div class="bottom__cube hide">
+                     <div id="green" class=" item bottom__cube--green"></div>
+                     <div id="blue" class=" item bottom__cube--blue"></div>
+                     <div id="yellow" class=" item bottom__cube--yellow"></div>
+                     <div id="purple" class=" item bottom__cube--purple"></div>
+                     <div id="aquamarine" class=" item bottom__cube--aquamarine"></div>
+                     <div id="gray" class=" item bottom__cube--gray"></div>
+                     <div id="coral" class=" item bottom__cube--coral"></div>
+                     <div id="orange" class=" item bottom__cube--orange"></div>
+                     <div id="rosybrown" class=" item bottom__cube--rosybrown"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="what hide">
+         <div class="box what__box">
+            <h3 class="what__title">Choose what you want:</h3>
+            <input type="radio" name="what" class="whatTable"><span>table</span>
+            <input type="radio" name="what" class="whatListe"><span>liste</span>
+         </div>
+      </div>
+      <div class="wrapper-choose ">
+         <div class="box choose">
+            <h2 class="choose__title">Choose what you want:</h2>
+            <form class="choose__radio">
+               <input type="radio" name="choose" checked><span>table</span>
+               <input class="choose__list" type="radio" name="choose"><span>list</span>
+            </form>
+            <form name="choose__table">
+               <table class="choose__table">
+                  <tr>
+                     <td class="choose__td">Count TR:</td>
+                     <td><input name="TR" class="choose__input" type="text"></td>
+                  </tr>
+                  <tr>
+                     <td class="choose__td">Count TD:</td>
+                     <td><input name="TD" class="choose__input" type="text"></td>
+                  </tr>
+               </table>
+               <h4 class="choose__text">Add style to your table:</h4>
+               <table class="choose__table">
+                  <tr>
+                     <td class="choose__td">Width of TD:</td>
+                     <td><input name="width" class="choose__input" type="text"></td>
+                  </tr>
+                  <tr>
+                     <td class="choose__td">Height TD:</td>
+                     <td><input name="height" class="choose__input" type="text"></td>
+                  </tr>
+               </table>
+               <div class="choose__border">
+                  <span>Width of border:</span>
+                  <input name="border" type="text">
+                  <span>Type of border:</span>
+                  <select name="type">
+                     <option value="solid">solid</option>
+                     <option value="dashed">dashed</option>
+                     <option value="dotted">dotted</option>
+                     <option value="groove">groove</option>
+                  </select>
+                  <span>Color of border:</span>
+                  <select name="color">
+                     <option value="black">black</option>
+                     <option value="red">red</option>
+                     <option value="blue">blue</option>
+                     <option value="green">green</option>
+                  </select>
+               </div>
+               <button class="choose__btn" type="button">Create table</button>
+            </form>
+         </div>
+      </div>
+      <div class="wrapper-liste hide">
+         <div class="box liste ">
+            <h2 class="liste__title">Choose what you want:</h2>
+            <form class="liste__radio">
+               <input class="liste__tb" type="radio" name="choose"><span>table</span>
+               <input class="liste__list" type="radio" name="choose" checked><span>list</span>
+            </form>
+            <form name="formList">
+               <table class="choose__table liste__table">
+                  <tr>
+                     <td class="choose__td">Count Li:</td>
+                     <td><input class="choose__input choose__width" type="text" name="count"></td>
+                  </tr>
+               </table>
+               <table class="choose__table liste__table">
+                  <tr>
+                     <td class="choose__td">Type of marks:</td>
+                     <td> <select class="liste__select" name="type" id="">
+                           <option value="circle">circle</option>
+                           <option value="disc">disc</option>
+                           <option value="square">square</option>
+                        </select>
+                     </td>
+                  </tr>
+               </table>
+               <input class="liste__btn" type="button" value="great">
+            </form>
+         </div>
+      </div>
+   </div>
+   <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- <div class="liste__div">
+      <span class="liste__text">Type of marks</span>
+      <select class="liste__select" name="" id="">
+         <option value="circle">circle</option>
+         <option value="disc">disc</option>
+         <option value="square">square</option>
+      </select>
+</div> -->
+<!-- <form>
+   <input type="radio" name="choose"><span>table</span>
+   <input type="radio" name="choose"><span>list</span>
+</form>
+<div class="create-list">
+   <form name="form-list">
+       <input type="text" name="count">
+       <select name="type">
+           <option value="circle">circle</option>
+           <option value="disc">disc</option>
+           <option value="square">square</option>
+       </select>
+       <input type="button" value="create list" name="create" class="btn-create-list">
+   </form>
+</div> -->
