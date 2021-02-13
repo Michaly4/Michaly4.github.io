@@ -215,7 +215,30 @@ body {
     width: 100%;
     margin-bottom: 40px;
   }
+  .header__top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+     margin: 0;
 }
+  .header__logo {
+ padding-bottom: 10px;
+}
+  .header__contact {
+  margin: 0;
+}
+  .header__suptitle {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+  .header__subtitle {
+  font-size: 25px;
+}
+  .header__title {
+  margin-bottom: 50px;
+}
+}
+
 
 .header__img {
   margin-bottom: 35px;
@@ -797,7 +820,21 @@ body {
   .karte .box {
     width: 320px;
   }
+  .footer__top {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
+  .footer__contact {
+  margin: 0;
+ 
+}
+  .footer__logo {
+ padding-bottom: 10px;
+}
+}
+
 
 .footer__top {
   padding: 30px 0;
