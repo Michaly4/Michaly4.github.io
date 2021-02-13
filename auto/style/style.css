@@ -621,7 +621,6 @@ body {
 }
 
 .about__title {
-  margin-left: -40px;
   padding-top: 80px;
   margin-bottom: 50px;
 }
@@ -629,7 +628,6 @@ body {
 .about__body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 0 70px 50px;
   width: 100%;
   margin: 0 auto;
 }
