@@ -706,10 +706,10 @@ body {
 }
 
 .contact__body {
-  width: 68.65079%;
-  outline: 3px solid #fff;
-  margin: 0 auto;
-  padding: 30px 0 15px;
+    width: 94.65079%;
+    outline: 3px solid #fff;
+    margin: 0 auto;
+    padding: 30px 15px 15px;
 }
 
 .contact__top {
