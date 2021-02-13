@@ -220,6 +220,7 @@ body {
     flex-direction: column;
     text-align: center;
      margin: 0;
+    padding-bottom: 80px;
 }
   .header__logo {
  padding-bottom: 10px;
