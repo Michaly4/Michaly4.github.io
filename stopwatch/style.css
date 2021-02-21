@@ -55,7 +55,7 @@ body {
 .center,
 .bottom {
    flex-wrap: wrap;
-    height: auto;
+    /*height: auto;*/
 }
 
 .hours {
