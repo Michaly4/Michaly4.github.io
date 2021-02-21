@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DZ11Core</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="block top">
+         <div class="data"></div>
+         <div class="hours"></div>
+      </div>
+      <div class="block center">
+         <div class="center__left">
+           <!--  <div class="timer"><span class="hs">00</span><span class="min">:00</span><span class="sec">:00</span><span class="milsec">:000</span></div> -->
+           <h2 id="watch">00:00:00:000</h2>
+          <div class="inputs">
+               <input id="start" type="button" value="start">
+               <input id="loop" type="button" value="loop">
+               <input id="stop" type="button" value="stop">
+               <input id="reset" type="button" value="reset">
+          </div>
+         </div>
+         <div class="center__right">
+            <div class="area" name="area" id=""></div>
+         </div>
+      </div>
+      <div class="block bottom">
+         <div class="bottom__left">
+                     <div class="bottom__box">
+                  <p class="counter">25</p>
+                  <span class="counter-min">minutes</span>
+                <div class="btn__left">
+                     <input id = "plus" type="button" value="+">
+                     <input id = "minus" type="button" value="-">
+                </div>
+                     </div>
+         </div>
+         <div class="bottom__right">
+            <h2 class="counter2 "><span class="countMin">00</span>:<span class="countSec">00</span></h2>
+            <div class="btn__right">
+               <input class=" item start" type="button" value="start">
+               <input class=" item stop" type="button" value="stop">
+               <input class=" item reset" type="button" value="reset">
+          </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
+
+
+   <script src="app.js"></script>
+</body>
+
+</html>

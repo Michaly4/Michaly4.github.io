@@ -1,0 +1,169 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-family: 'Orbitron', sans-serif;
+   color: #307a90;
+}
+
+.wrapper {
+   background-color: #01010f;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.block {
+   width: 100%;
+   height: 33.33333%;
+   border: 2px solid rgba(255, 255, 255, .2);
+   background-color: #010314;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 0;
+}
+
+.block:not(:last-child) {
+   margin-bottom: 10px;
+}
+
+.data,
+.hours,
+.timer {
+   font-weight: bold;
+   font-size: 18px;
+}
+
+.timer {
+   font-size: 32px;
+}
+
+.top {
+   flex-direction: column;
+}
+
+.center,
+.bottom {
+   flex-wrap: wrap;
+    height: auto;
+}
+
+.hours {
+   margin-top: 5px;
+   font-size: 42px;
+   width: 282px;
+}
+
+.center__left,
+.center__right,
+.bottom__left,
+.bottom__right {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.area {
+   background-color: #01010f;
+   padding: 25px 0;
+   box-shadow: 0 0 4px rgba(255, 255, 255, .5);
+   color: #307a90;
+   text-align: center;
+   width: 200px;
+   height: auto;
+}
+
+#watch {
+   width: 200px;
+}
+
+.inputs {
+   padding: 20px 0;
+   margin-top: 20px;
+}
+
+input[type=button] {
+   padding: 5px 10px;
+   color: #307a90;
+   background-color: #01010f;
+   border: 1px solid rgba(255, 255, 255, .5);
+   text-transform: uppercase;
+   border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+   box-shadow: 0 0 4px rgba(255, 255, 255, .5);
+   cursor: pointer;
+}
+
+.counter,.counter2 {
+   text-align: center;
+   font-size: 42px;
+   font-weight: bold;
+}
+.counter2{
+   width: 140px;
+   display: flex;
+}
+
+.btn__left {
+
+   padding: 10px 0;
+}
+
+.bottom__box {
+   text-align: center;
+}
+
+.btn__right {
+   padding: 20px 0;
+}
+
+.bottom__left,
+.bottom__right {
+   padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width : 529px) {
+
+   .center__left,
+   .center__right,
+   .bottom__right,
+   .bottom__left {
+      width: 100%;
+   }
+
+   .hours {
+      font-size: 30px;
+      width: 201px;
+   }
+
+   .center,
+   .bottom {
+      height: auto;
+   }
+
+   .block:not(:last-child) {
+      margin: 0;
+   }
+}
