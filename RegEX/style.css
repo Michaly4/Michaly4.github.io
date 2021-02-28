@@ -1,0 +1,216 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body,
+html {
+   width: 100%;
+   height: 100%;
+   background-color: #f5f5f5;
+   position: relative;
+}
+
+.container {
+   width: 70%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   flex-direction: column;
+}
+
+.form {
+   width: 300px;
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],.pass{
+   width: 100%;
+   height: 25px;
+   padding-left: 5px;
+   position: relative;
+   border: 2px solid #f0f0f0;
+   outline: none;
+}
+input::-ms-clear {
+   display: none;
+}
+input::-webkit-keygen-select {
+   display: none;
+}
+
+.wrapper {
+   text-align: center;
+}
+
+.form__control {
+   position: relative;
+   width: 75%;
+}
+
+.form__control i {
+   position: absolute;
+   top: 3px;
+   right: 5px;
+   visibility: hidden;
+}
+
+.succes input {
+   border-color: #2ecc71;
+}
+
+.error input {
+   border-color: #eb615e;
+}
+
+.form__control.succes i.uil-check {
+   visibility: visible;
+   color: #2ecc71;
+}
+
+.form__control.error i.uil-exclamation-circle {
+   visibility: visible;
+   color: #eb615e;
+}
+
+.pop {
+   width: 100%;
+   position: relative;
+}
+
+.pop {
+   position: absolute;
+   width: 180px;
+   height: 20px;
+   top: 25px;
+   left: 5px;
+   color: white;
+   background-color: #eb615e;
+   font-size: 13px;
+   line-height: 20px;
+   border-radius: 2px;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   -ms-border-radius: 2px;
+   -o-border-radius: 2px;
+   visibility: hidden;
+}
+.pop.active{
+   visibility: visible;
+   
+}
+
+/* .pop::after{
+   position: absolute;
+   content: 'x';
+   color: #eb615e;;
+   top: 3px;
+    right: 50px;
+} */
+input::placeholder {
+   font-size: 10px;
+   position: relative;
+}
+
+button[type=submit] {
+   width: 75%;
+   height: 20px;
+   background-color: #57abf8;
+   outline: none;
+   border: none;
+   border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+   font-size: 10px;
+   color: white;
+   cursor: pointer;
+}
+button[type=submit]:hover{
+   background-color: #2282dc;
+   transition: all .2s ease;
+   -webkit-transition: all .2s ease;
+   -moz-transition: all .2s ease;
+   -ms-transition: all .2s ease;
+   -o-transition: all .2s ease;
+}
+
+input[type=checkbox] {
+   margin-bottom: 20px;
+   margin-right: 8px;
+}
+
+.privacy {
+   font-size: 13px;
+}
+
+.great {
+   width: 300px;
+   height: 300px;
+  background-color: #fdfdfd;
+   margin: 0 auto;
+position: relative;
+}
+.wrapper__great{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: rgba(0,0,0, 0.3);
+   display: none;
+   top: 0;
+   padding-top: 170px;
+}
+.great__top {
+   height: 40%;
+   background-color: #54c1aa;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 80px;
+   color: white;
+}
+
+.great__bottom {
+   text-align: center;
+   padding: 20px 0;
+
+}
+
+.great__box {
+   position: relative;
+}
+.great__title,.great__text{
+   margin-bottom: 10px;
+}
+
+.great__inp {
+   padding: 5px 30px;
+   background-color: #f2ba43;
+   outline: none;
+   border: none;
+   color: white;
+   border-radius: 30px;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   -ms-border-radius: 30px;
+   -o-border-radius: 30px;
+   cursor: pointer;
+}
+
+.great__box i {
+   position: absolute;
+   top: 2px;
+   right: 80px;
+font-size: 20px;
+color: white;
+}
