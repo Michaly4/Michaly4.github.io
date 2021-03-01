@@ -1,0 +1,24 @@
+<svg id="Группа_117_копия" data-name="Группа 117 копия" xmlns="http://www.w3.org/2000/svg" width="16.34" height="28.34" viewBox="0 0 16.34 28.34">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke: #fff;
+      }
+
+      .cls-1 {
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-width: 4px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Группа_116" data-name="Группа 116" class="cls-1">
+    <path id="Фигура_11" data-name="Фигура 11" class="cls-2" d="M1495.65,1019.35l0.7-.7-11-11-0.7.7Z" transform="translate(-1482 -1005.66)"/>
+    <path id="Фигура_11_копия" data-name="Фигура 11 копия" class="cls-2" d="M1495.28,1019.99l0.73,0.73-11.29,11.29-0.73-.73Z" transform="translate(-1482 -1005.66)"/>
+  </g>
+</svg>

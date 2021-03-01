@@ -1,0 +1,29 @@
+<svg id="Группа_117" data-name="Группа 117" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.5;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #fff;
+      }
+
+      .cls-2 {
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke-width: 4px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Эллипс_588" data-name="Эллипс 588" class="cls-1" cx="30" cy="30" r="30"/>
+  <g id="Группа_116" data-name="Группа 116" class="cls-2">
+    <path id="Фигура_11" data-name="Фигура 11" class="cls-3" d="M414.353,1019.35l-0.707-.7,11-11,0.708,0.7Z" transform="translate(-393 -991)"/>
+    <path id="Фигура_11_копия" data-name="Фигура 11 копия" class="cls-3" d="M414.716,1019.99l-0.726.73,11.294,11.29,0.726-.73Z" transform="translate(-393 -991)"/>
+  </g>
+</svg>
