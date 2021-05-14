@@ -367,6 +367,19 @@ body {
 }
 
 @media screen and (max-width:812px) {
+   .header__top{
+      padding: 10px;
+      justify-content: center;
+   }
+   .header__top a, p,.uil{
+      font-size: 14px;
+   }
+  /*  .header__top--left{
+      width: 50%;
+   }
+   .header__top--right{
+      width: 50%;
+   } */
    .header__bottom {
       padding: 30px 0 15px 0;
    }
@@ -388,6 +401,9 @@ body {
    .main{
       height: 100%;
    }
+   .main__tab{
+      margin-left: 50px;
+   }
    .wrapper{
       height: inherit;
    }
@@ -397,6 +413,15 @@ body {
    flex-direction: column;
    padding-top: 20px;
 }
+.header__top .page{
+   font-size: 16px;
+}
+.header__top p {
+   font-size: 16px;
+}
+.header__top .uil {
+   font-size: 30px;
+}
 .header__top--left{
    margin-bottom: 10px;
 }
@@ -405,7 +430,7 @@ body {
    margin-bottom: 10px;
 }
 .header__inp{
-   margin: 15px 15px 15px 0;
+   margin: 15px 15px 15px 30px;
 }
 .header__bottom,.header__bottom--center,.main__info{
    flex-direction: column;
