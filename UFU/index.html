@@ -16,8 +16,7 @@
 
 <body>
    <header class="header">
-
-      <div class="header__top">
+      <div class="header__top" id="header">
          <div class="header__top--left">
             <a class="page" href="">Алюмни</a>
             <a class="page" href="">Підтримай УВУ</a>
@@ -30,11 +29,13 @@
             <div class="inp">
                <input class="header__inp" type="text" placeholder="Пошук" />
             </div>
-            <p class="lg">DE</p>
-            <p class="lg">UA</p>
+           <div class="header__lg">
+               <p class="lg">DE</p>
+               <p class="lg">UA</p>
+           </div>
          </div>
       </div>
-      <div class="header__bottom">
+      <div class="header__bottom" id="bottom">
          <div class="header__bottom--left">
             <div class="header__logo">
                <img src="./image/logo.svg" alt="">
@@ -57,27 +58,47 @@
    </header>
    <main class="main">
       <div class="wrapper">
+         <div class="header__bottom wrapper--bottom" id="bottom">
+            <div class="header__bottom--left">
+               <div class="header__logo">
+                  <img src="./image/logo.svg" alt="">
+               </div>
+            </div>
+            <div class="header__bottom--center">
+               <a href="" class="header__bottom--link">Університет</a>
+               <a href="" class="header__bottom--link">Навчання</a>
+               <a href="" class="header__bottom--link">Програми</a>
+               <a href="" class="header__bottom--link">Бібліотека</a>
+               <a href="" class="header__bottom--link">Новини і події</a>
+               <a href="" class="header__bottom--link">Проекти</a>
+            </div>
+            <div class="header__bottom--right">
+               <a href="" class="stud">Розклад</a>
+               <a href="" class="stud">Вступнику</a>
+            </div>
+         </div>
          <div class="container">
             <div class="main__body">
-               <div class="main__tab">
-                  <h2 class="main__title">Унікальний український університет у столиці Баварії </h2>
-                
-                  <p class="main__text"><a href="https://www.ufu-muenchen.de/uk" target="_blank">УВУ</a>- єдиний університет по за межами України з українською,німецькою та
-                     англійською мовами викладання,з правом присвоєння вчених ступенів магістра та доктора наук </p>
-                     
-               </div>
+           <div class="tab__body">
+                  <div class="main__tab">
+                     <h2 class="main__title">Унікальний український університет у столиці Баварії </h2>
+                     <p class="main__text"><a href="https://www.ufu-muenchen.de/uk" target="_blank">УВУ</a>- єдиний університет по за межами України з українською,німецькою та
+                        англійською мовами викладання,з правом присвоєння вчених ступенів магістра та доктора наук </p>
+                        
+                  </div>
+           </div>
                <div class="main__info">
                   <div class="main__item">
-                     <p class="item__title">Навчання в Мюнхене</p>
+                     <p class="item__title uber">Навчання в Мюнхене</p>
                   </div>
                   <div class="main__item">
-                     <p class="item__title">Центр українською культури в Німеччині</p>
+                     <p class="item__title uber">Центр українською культури в Німеччині</p>
                   </div>
                   <div class="main__item">
-                     <p class="item__title">Міжнародні професори</p>
+                     <p class="item__title uber">Міжнародні професори</p>
                   </div>
                   <div class="main__item">
-                     <p class="item__title">Унікальні архівні матеріали</p>
+                     <p class="item__title uber">Унікальні архівні матеріали</p>
                   </div>
                </div>
             </div>
@@ -93,7 +114,7 @@
          </div>
       </div>
    </main>
-    <script src="script.js"></script>
+   <script src="script.js"></script>
 </body>
 
 </html>
