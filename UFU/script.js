@@ -56,14 +56,14 @@ window.addEventListener('scroll', () => {
    let scrollTop = window.scrollY;
    if (scrollTop >= header) {
       /*  scroll.style.display = 'flex'; */
-      scroll.style.opacity = '1';
+      scroll.style.opacity = 1;
       scroll.style.transition = 'all .8s ease';
       addActive();
       scrollMain();
 
    } else {
       /*  scroll.style.display = 'none'; */
-      scroll.style.opacity = '0';
+      scroll.style.opacity = 0;
       scroll.style.transition = 'all .1s ease';
       info.style.top = '0px';
       dellActive();
