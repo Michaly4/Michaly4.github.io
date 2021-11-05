@@ -1491,7 +1491,7 @@ li span {
 
 .faq__ul li:hover {
 
-   font-size: 22px;
+   /*font-size: 22px;*/
    list-style: none;
    opacity: 1;
    text-shadow: 0 0 15px #fff;
@@ -1518,13 +1518,13 @@ li span {
   display: block;
   transform: translateX(-50px);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
- -webkit-transform: translateX(-50px);
-  -moz-transform: translateX(-50px);
-  -ms-transform: translateX(-50px);
-  -o-transform: translateX(-50px);
-  -webkit-transform: translateX(-50px);
+ -webkit-transform: translateX(-30px);
+  -moz-transform: translateX(-30px);
+  -ms-transform: translateX(-30px);
+  -o-transform: translateX(-30px);
+  -webkit-transform: translateX(-30px);
 }
-.team-text:nth-child(3) {
+/*.team-text:nth-child(3) {
 	transform: translateX(30px);
 	-webkit-transform: translateX(30px);
 	-moz-transform: translateX(30px);
@@ -1546,6 +1546,7 @@ li span {
 	-ms-transform: translateX(30px);
 	-o-transform: translateX(30px);
 }
+*/
 .team-text.animation-team {
 	opacity: 1;
 	transform: translateX(0px);
